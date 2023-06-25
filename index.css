@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    overflow: hidden;
+}
+
+main {
+    text-align: center;
+}
+/* HEADER */
+
+.header {
+    border: black solid 1mm;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 10px 20px black;
+    margin: 1rem;
+    margin-left: 10%;
+    background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 80px;
+}
+
+.headerName {
+    font-size: 50px;
+    margin: auto 1rem;
+}
+
+/* FORM */
+
+.form {
+    display: grid;
+    grid-template: 40px 40px/ 1fr 1fr;
+    width: 10cm;
+    margin: 1rem;
+}
+
+.form .input {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: larger;
+    outline: none;
+    border: none;
+    margin: 3px;
+}
+
+.formBtn {
+    border: none;
+    font-size: larger;
+    background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
+    border-radius: 20px;
+    transition: all 0.7s ease;
+    font-weight: 600;
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+.formBtn:hover {
+    background: radial-gradient(circle at 10% 20%, rgb(133, 47, 199) 0%, rgb(235, 56, 137) 90%);
+    transform:scaleY(1.2);
+}
+
+.meme {
+    position: relative;
+}
+.meme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 10%;
+    margin-top: 0;
+  }
+
+.meme--image {
+    border-radius: 3px;
+    max-width: 10cm;
+    max-height: 10cm;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
